@@ -37,7 +37,7 @@ I need to investigate to determine if there has been a compromise.
 
  ```
 source="windows_logs.csv" host="cassandra-HP-EliteBook-850-G6" extracted_host=WIN-WS01 process=winword.exe 
-| stats count by  user , proces, command_line
+| stats count by  user , process, command_line
 ```
 <img width="1909" height="812" alt="Capture d’écran du 2026-03-22 12-45-17" src="https://github.com/user-attachments/assets/28c92cbe-dff3-4dcc-bcde-b54bec925c07" />
 File opened: invoice.docm
@@ -48,13 +48,13 @@ Conclusion: Initial access via phishing document.
 
 ### Payload execution
 
- Find out what happened after the document
+ I need find out what happened after the document
  ```
 source="windows_logs.csv" host="cassandra-HP-EliteBook-850-G6" extracted_host=WIN-WS01 process = powershell.exe 
 | stats count by _time  user , command_line
  ```
 Find out number of request with ``-enc``
-
+Encoded command detection:
 ```
  source="windows_logs.csv" host="cassandra-HP-EliteBook-850-G6" extracted_host=WIN-WS01 process = powershell.exe -enc
 | stats count by  user , command_line
@@ -172,4 +172,4 @@ report is [here](phishingreport.md)
 ---
 # Conclusion
 
-This investigation demonstrates how a SOC analyst can detect, analyze, and reconstruct a full attack chain using Windows logs in Splunk.
+This investigation demonstrates how i  can detect, analyze, and reconstruct a full attack chain using Windows logs in Splunk.
