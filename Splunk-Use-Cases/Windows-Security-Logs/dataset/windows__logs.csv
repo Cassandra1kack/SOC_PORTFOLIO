@@ -1,0 +1,801 @@
+_time,host,EventCode,user,src_ip,process,command_line,status,description
+2025-08-14T08:00:00,WIN-DB01,4688,guest,10.0.0.8,chrome.exe,,OK,process_created
+2025-08-14T08:00:20,WIN-DC01,4688,bob,10.0.0.44,winword.exe,,OK,process_created
+2025-08-14T08:00:40,WIN-APP01,4625,itadmin,10.0.0.12,winword.exe,,OK,login_failed
+2025-08-14T08:01:00,WIN-WS02,4625,alice,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T08:01:20,WIN-WS02,4624,itadmin,10.0.0.8,chrome.exe,,OK,login_success
+2025-08-14T08:01:40,WIN-DB01,4688,david,10.0.0.8,chrome.exe,,OK,process_created
+2025-08-14T08:01:45,WIN-DC01,4625,bob,10.0.0.8,psexec.exe,,FAIL,login_failed
+2025-08-14T08:02:00,WIN-DC01,4625,guest,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T08:02:20,WIN-APP01,4625,backup,10.0.0.44,winword.exe,,OK,login_failed
+2025-08-14T08:02:40,WIN-WS02,4624,eve,10.0.0.8,chrome.exe,,OK,login_success
+2025-08-14T08:03:00,WIN-WS02,4625,alice,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T08:03:20,WIN-WS01,4624,eve,10.0.0.44,winword.exe,,OK,login_success
+2025-08-14T08:03:40,WIN-WS02,4625,charles,10.0.0.8,explorer.exe,,OK,login_failed
+2025-08-14T08:04:00,WIN-DB01,4624,alice,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T08:04:20,WIN-DC01,4624,david,10.0.0.44,explorer.exe,,OK,login_success
+2025-08-14T08:04:40,WIN-DB01,4625,itadmin,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T08:05:00,WIN-WS02,4688,itadmin,10.0.0.8,winword.exe,,OK,process_created
+2025-08-14T08:05:20,WIN-APP01,4624,backup,10.0.0.8,winword.exe,,OK,login_success
+2025-08-14T08:05:40,WIN-DB01,4624,itadmin,10.0.0.5,chrome.exe,,OK,login_success
+2025-08-14T08:06:00,WIN-APP01,4624,guest,10.0.0.44,chrome.exe,,OK,login_success
+2025-08-14T08:06:08,WIN-APP01,4624,david,10.0.0.5,explorer.exe,,FAIL,login_success
+2025-08-14T08:06:20,WIN-WS02,4624,eve,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T08:06:40,WIN-DB01,4688,backup,10.0.0.8,explorer.exe,,OK,process_created
+2025-08-14T08:07:00,WIN-WS01,4625,backup,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T08:07:20,WIN-WS02,4624,alice,10.0.0.12,explorer.exe,,OK,login_success
+2025-08-14T08:07:40,WIN-WS02,4624,alice,10.0.0.8,winword.exe,,OK,login_success
+2025-08-14T08:08:00,WIN-WS02,4688,eve,10.0.0.5,winword.exe,,OK,process_created
+2025-08-14T08:08:20,WIN-DC01,4688,eve,10.0.0.44,explorer.exe,,FAIL,process_created
+2025-08-14T08:08:20,WIN-APP01,4624,eve,10.0.0.44,chrome.exe,,OK,login_success
+2025-08-14T08:08:40,WIN-WS02,4625,bob,10.0.0.5,winword.exe,,OK,login_failed
+2025-08-14T08:09:00,WIN-APP01,4624,david,10.0.0.8,winword.exe,,OK,login_success
+2025-08-14T08:09:20,WIN-APP01,4624,alice,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T08:09:31,WIN-WS01,4688,guest,10.0.0.8,explorer.exe,,FAIL,process_created
+2025-08-14T08:09:40,WIN-WS02,4625,itadmin,10.0.0.8,explorer.exe,,OK,login_failed
+2025-08-14T08:10:00,WIN-WS02,4624,david,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T08:10:20,WIN-WS02,4625,guest,10.0.0.12,winword.exe,,OK,login_failed
+2025-08-14T08:10:40,WIN-WS02,4688,david,10.0.0.44,explorer.exe,,OK,process_created
+2025-08-14T08:11:00,WIN-APP01,4625,david,10.0.0.44,chrome.exe,,OK,login_failed
+2025-08-14T08:11:20,WIN-APP01,4624,charles,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T08:11:40,WIN-WS02,4688,backup,10.0.0.12,chrome.exe,,OK,process_created
+2025-08-14T08:12:00,WIN-WS02,4625,alice,10.0.0.8,winword.exe,,OK,login_failed
+2025-08-14T08:12:20,WIN-DC01,4624,charles,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T08:12:40,WIN-WS01,4624,itadmin,10.0.0.44,explorer.exe,,OK,login_success
+2025-08-14T08:13:00,WIN-DB01,4625,david,10.0.0.44,winword.exe,,OK,login_failed
+2025-08-14T08:13:20,WIN-WS02,4624,alice,10.0.0.8,chrome.exe,,OK,login_success
+2025-08-14T08:13:40,WIN-APP01,4624,backup,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T08:14:00,WIN-WS02,4688,charles,10.0.0.5,explorer.exe,,OK,process_created
+2025-08-14T08:14:20,WIN-DB01,4688,david,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T08:14:40,WIN-DC01,4624,bob,10.0.0.44,explorer.exe,,OK,login_success
+2025-08-14T08:14:52,WIN-DB01,4625,alice,10.0.0.5,explorer.exe,,OK,login_failed
+2025-08-14T08:15:00,WIN-APP01,4625,charles,10.0.0.8,explorer.exe,,OK,login_failed
+2025-08-14T08:15:20,WIN-APP01,4624,bob,10.0.0.44,explorer.exe,,OK,login_success
+2025-08-14T08:15:40,WIN-WS01,4688,david,10.0.0.8,explorer.exe,,OK,process_created
+2025-08-14T08:16:00,WIN-WS02,4625,alice,10.0.0.8,explorer.exe,,OK,login_failed
+2025-08-14T08:16:20,WIN-DC01,4625,eve,10.0.0.44,winword.exe,,OK,login_failed
+2025-08-14T08:16:40,WIN-WS02,4624,david,10.0.0.44,chrome.exe,,OK,login_success
+2025-08-14T08:17:00,WIN-WS02,4625,david,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T08:17:20,WIN-APP01,4688,bob,10.0.0.8,winword.exe,,OK,process_created
+2025-08-14T08:17:40,WIN-WS01,4688,charles,10.0.0.12,winword.exe,,OK,process_created
+2025-08-14T08:18:00,WIN-DB01,4624,bob,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T08:18:20,WIN-DC01,4624,itadmin,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T08:18:40,WIN-WS01,4625,bob,10.0.0.12,winword.exe,,OK,login_failed
+2025-08-14T08:19:00,WIN-DC01,4625,alice,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T08:19:20,WIN-WS02,4624,backup,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T08:19:40,WIN-WS02,4624,bob,10.0.0.8,winword.exe,,OK,login_success
+2025-08-14T08:20:00,WIN-APP01,4625,eve,10.0.0.5,winword.exe,,OK,login_failed
+2025-08-14T08:20:00,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:20:05,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:20:10,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:20:15,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:20:20,WIN-DC01,4688,eve,10.0.0.5,explorer.exe,,OK,process_created
+2025-08-14T08:20:20,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:20:25,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:20:30,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:20:35,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:20:40,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:20:40,WIN-WS01,4624,eve,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T08:20:45,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:20:50,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:20:55,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:21:00,WIN-APP01,4624,administrator,45.77.22.91,rdp,,SUCCESS,rdp_login_success
+2025-08-14T08:21:00,WIN-DB01,4625,eve,10.0.0.8,chrome.exe,,OK,login_failed
+2025-08-14T08:21:00,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:21:05,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:21:10,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:21:15,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:21:20,WIN-WS01,4688,alice,10.0.0.44,chrome.exe,,OK,process_created
+2025-08-14T08:21:20,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:21:25,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:21:30,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:21:35,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:21:40,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:21:40,WIN-WS01,4625,guest,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T08:21:45,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:21:50,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:21:55,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:22:00,WIN-APP01,4688,administrator,45.77.22.91,cmd.exe,whoami,OK,attack_activity
+2025-08-14T08:22:00,WIN-DB01,4624,bob,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T08:22:00,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:22:05,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:22:10,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:22:15,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:22:20,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:22:20,WIN-DC01,4624,backup,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T08:22:25,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:22:30,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:22:35,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:22:40,WIN-APP01,4624,itadmin,10.0.0.5,chrome.exe,,OK,login_success
+2025-08-14T08:22:40,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:22:45,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:22:50,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:22:55,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:23:00,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:23:00,WIN-WS02,4624,david,10.0.0.44,winword.exe,,OK,login_success
+2025-08-14T08:23:00,WIN-APP01,4688,administrator,45.77.22.91,powershell.exe,powershell -enc SQBFAFgA,OK,attack_activity
+2025-08-14T08:23:05,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:23:10,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:23:15,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:23:20,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:23:20,WIN-APP01,4688,itadmin,10.0.0.12,winword.exe,,OK,process_created
+2025-08-14T08:23:25,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:23:30,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:23:35,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:23:40,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:23:40,WIN-WS01,4625,bob,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T08:23:45,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:23:50,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:23:55,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:24:00,WIN-APP01,4720,administrator,45.77.22.91,,net user backupadmin Password123 /add,OK,attack_activity
+2025-08-14T08:24:00,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:24:00,WIN-DB01,4624,alice,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T08:24:05,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:24:10,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:24:15,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:24:20,WIN-DC01,4688,eve,10.0.0.5,winword.exe,,OK,process_created
+2025-08-14T08:24:20,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:24:25,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:24:30,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:24:35,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:24:40,WIN-APP01,4625,bob,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T08:24:40,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:24:45,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:24:50,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:24:55,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:25:00,WIN-APP01,4732,administrator,45.77.22.91,,net localgroup administrators backupadmin /add,OK,attack_activity
+2025-08-14T08:25:00,WIN-DB01,4624,bob,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T08:25:00,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:25:05,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:25:10,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:25:15,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:25:20,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:25:20,WIN-WS01,4625,alice,10.0.0.44,chrome.exe,,OK,login_failed
+2025-08-14T08:25:25,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:25:30,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:25:35,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:25:40,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:25:40,WIN-DC01,4688,backup,10.0.0.12,winword.exe,,OK,process_created
+2025-08-14T08:25:45,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:25:50,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:25:55,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:26:00,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:26:00,WIN-DC01,4625,backup,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T08:26:00,WIN-APP01,7045,administrator,45.77.22.91,,malicious_service installed,OK,attack_activity
+2025-08-14T08:26:05,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:26:10,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:26:15,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:26:20,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:26:20,WIN-APP01,4688,eve,10.0.0.44,chrome.exe,,OK,process_created
+2025-08-14T08:26:25,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:26:30,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:26:35,WIN-APP01,4625,administrator,45.77.22.91,rdp,,FAIL,rdp_login_failed
+2025-08-14T08:26:40,WIN-APP01,4624,david,10.0.0.8,winword.exe,,OK,login_success
+2025-08-14T08:27:00,WIN-DC01,4624,david,10.0.0.44,explorer.exe,,OK,login_success
+2025-08-14T08:27:00,WIN-APP01,1102,administrator,45.77.22.91,,audit log cleared,OK,attack_activity
+2025-08-14T08:27:20,WIN-WS02,4625,david,10.0.0.5,winword.exe,,OK,login_failed
+2025-08-14T08:27:40,WIN-APP01,4625,david,10.0.0.5,winword.exe,,OK,login_failed
+2025-08-14T08:28:00,WIN-DC01,4688,bob,10.0.0.8,chrome.exe,,OK,process_created
+2025-08-14T08:28:20,WIN-DC01,4624,guest,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T08:28:40,WIN-DC01,4624,charles,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T08:29:00,WIN-WS02,4625,bob,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T08:29:20,WIN-WS01,4688,david,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T08:29:40,WIN-APP01,4625,backup,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T08:30:00,WIN-DC01,4688,eve,10.0.0.44,explorer.exe,,OK,process_created
+2025-08-14T08:30:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:30:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:30:20,WIN-WS02,4625,guest,10.0.0.44,chrome.exe,,OK,login_failed
+2025-08-14T08:30:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:30:40,WIN-DB01,4624,david,10.0.0.8,chrome.exe,,OK,login_success
+2025-08-14T08:30:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:31:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:31:00,WIN-WS02,4688,backup,10.0.0.12,explorer.exe,,OK,process_created
+2025-08-14T08:31:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:31:20,WIN-DB01,4688,itadmin,10.0.0.8,explorer.exe,,OK,process_created
+2025-08-14T08:31:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:31:40,WIN-DB01,4688,charles,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T08:31:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:31:46,WIN-APP01,4625,itadmin,185.193.88.10,chrome.exe,,OK,login_failed
+2025-08-14T08:32:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:32:00,WIN-WS02,4625,charles,10.0.0.8,winword.exe,,OK,login_failed
+2025-08-14T08:32:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:32:20,WIN-WS01,4688,guest,10.0.0.8,winword.exe,,OK,process_created
+2025-08-14T08:32:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:32:40,WIN-DB01,4625,alice,10.0.0.5,winword.exe,,OK,login_failed
+2025-08-14T08:32:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:33:00,WIN-DB01,4625,itadmin,10.0.0.12,winword.exe,,OK,login_failed
+2025-08-14T08:33:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:33:13,WIN-APP01,4625,alice,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T08:33:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:33:20,WIN-WS02,4688,itadmin,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T08:33:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:33:40,WIN-DB01,4624,itadmin,10.0.0.8,chrome.exe,,OK,login_success
+2025-08-14T08:33:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:34:00,WIN-APP01,4688,backup,10.0.0.8,winword.exe,,OK,process_created
+2025-08-14T08:34:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:34:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:34:20,WIN-APP01,4688,alice,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T08:34:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:34:40,WIN-WS02,4624,charles,10.0.0.44,chrome.exe,,OK,login_success
+2025-08-14T08:34:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:35:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:35:00,WIN-DC01,4625,bob,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T08:35:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:35:20,WIN-WS01,4624,alice,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T08:35:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:35:40,WIN-DB01,4625,eve,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T08:35:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:35:46,WIN-DC01,4625,itadmin,45.77.22.91,winword.exe,,FAIL,login_failed
+2025-08-14T08:36:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:36:00,WIN-APP01,4688,alice,10.0.0.44,chrome.exe,,OK,process_created
+2025-08-14T08:36:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:36:20,WIN-WS02,4688,charles,10.0.0.5,explorer.exe,,OK,process_created
+2025-08-14T08:36:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:36:40,WIN-WS01,4688,guest,10.0.0.5,explorer.exe,,OK,process_created
+2025-08-14T08:36:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:37:00,WIN-APP01,4624,itadmin,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T08:37:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:37:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:37:20,WIN-DC01,4625,guest,10.0.0.44,chrome.exe,,OK,login_failed
+2025-08-14T08:37:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:37:40,WIN-WS02,4625,bob,10.0.0.44,winword.exe,,OK,login_failed
+2025-08-14T08:37:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:38:00,WIN-APP01,4688,backup,10.0.0.8,winword.exe,,OK,process_created
+2025-08-14T08:38:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:38:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:38:20,WIN-WS02,4625,eve,10.0.0.44,winword.exe,,OK,login_failed
+2025-08-14T08:38:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:38:40,WIN-WS01,4625,david,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T08:38:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:38:54,WIN-APP01,4688,bob,185.193.88.10,cmd.exe,,OK,process_created
+2025-08-14T08:39:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:39:00,WIN-WS01,4624,alice,10.0.0.5,chrome.exe,,OK,login_success
+2025-08-14T08:39:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:39:20,WIN-WS02,4625,eve,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T08:39:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:39:40,WIN-DB01,4624,bob,10.0.0.44,explorer.exe,,OK,login_success
+2025-08-14T08:39:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:40:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:40:00,WIN-APP01,4625,charles,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T08:40:05,WIN-WS02,4688,itadmin,45.77.22.91,powershell.exe,,FAIL,process_created
+2025-08-14T08:40:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:40:16,WIN-WS02,4624,david,10.0.0.12,chrome.exe,,FAIL,login_success
+2025-08-14T08:40:20,WIN-APP01,4624,alice,10.0.0.8,winword.exe,,OK,login_success
+2025-08-14T08:40:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:40:40,WIN-WS02,4625,itadmin,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T08:40:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:41:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:41:00,WIN-WS01,4624,eve,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T08:41:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:41:20,WIN-WS02,4688,backup,10.0.0.44,winword.exe,,OK,process_created
+2025-08-14T08:41:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:41:40,WIN-WS01,4625,alice,10.0.0.8,explorer.exe,,OK,login_failed
+2025-08-14T08:41:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:42:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:42:00,WIN-WS01,4624,eve,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T08:42:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:42:20,WIN-WS02,4624,david,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T08:42:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:42:40,WIN-WS01,4688,itadmin,10.0.0.12,chrome.exe,,OK,process_created
+2025-08-14T08:42:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:43:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:43:00,WIN-DB01,4624,guest,10.0.0.44,explorer.exe,,OK,login_success
+2025-08-14T08:43:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:43:20,WIN-DC01,4625,guest,10.0.0.8,winword.exe,,OK,login_failed
+2025-08-14T08:43:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:43:40,WIN-DC01,4625,itadmin,10.0.0.8,chrome.exe,,OK,login_failed
+2025-08-14T08:43:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:44:00,WIN-WS01,4624,charles,10.0.0.5,chrome.exe,,OK,login_success
+2025-08-14T08:44:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:44:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:44:20,WIN-DC01,4624,guest,10.0.0.8,chrome.exe,,OK,login_success
+2025-08-14T08:44:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:44:40,WIN-DB01,4625,alice,10.0.0.5,explorer.exe,,OK,login_failed
+2025-08-14T08:44:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:45:00,WIN-WS02,4688,guest,10.0.0.8,explorer.exe,,OK,process_created
+2025-08-14T08:45:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:45:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:45:20,WIN-WS02,4625,itadmin,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T08:45:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:45:40,WIN-WS02,4625,guest,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T08:45:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:46:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:46:00,WIN-WS01,4624,charles,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T08:46:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:46:20,WIN-WS01,4688,itadmin,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T08:46:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:46:40,WIN-WS01,4625,backup,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T08:46:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:47:00,WIN-WS02,4688,backup,10.0.0.12,explorer.exe,,OK,process_created
+2025-08-14T08:47:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:47:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:47:20,WIN-WS02,4688,guest,10.0.0.5,explorer.exe,,OK,process_created
+2025-08-14T08:47:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:47:40,WIN-APP01,4625,itadmin,10.0.0.12,winword.exe,,OK,login_failed
+2025-08-14T08:47:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:48:00,WIN-WS02,4624,bob,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T08:48:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:48:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:48:20,WIN-APP01,4688,itadmin,10.0.0.8,explorer.exe,,OK,process_created
+2025-08-14T08:48:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:48:40,WIN-DB01,4688,backup,10.0.0.5,explorer.exe,,OK,process_created
+2025-08-14T08:48:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:49:00,WIN-WS02,4624,backup,10.0.0.44,winword.exe,,OK,login_success
+2025-08-14T08:49:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:49:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:49:20,WIN-WS01,4624,eve,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T08:49:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:49:40,WIN-APP01,4688,eve,10.0.0.12,explorer.exe,,OK,process_created
+2025-08-14T08:49:43,WIN-WS02,4625,charles,10.0.0.5,explorer.exe,,OK,login_failed
+2025-08-14T08:49:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:50:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:50:00,WIN-DB01,4624,eve,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T08:50:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:50:20,WIN-APP01,4688,bob,10.0.0.44,chrome.exe,,OK,process_created
+2025-08-14T08:50:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:50:40,WIN-WS02,4688,bob,10.0.0.44,winword.exe,,OK,process_created
+2025-08-14T08:50:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:51:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:51:00,WIN-WS02,4625,bob,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T08:51:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:51:20,WIN-WS01,4625,backup,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T08:51:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:51:31,WIN-DB01,4625,backup,45.77.22.91,cmd.exe,,OK,login_failed
+2025-08-14T08:51:40,WIN-WS01,4625,itadmin,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T08:51:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:52:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:52:00,WIN-DC01,4625,alice,10.0.0.8,chrome.exe,,OK,login_failed
+2025-08-14T08:52:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:52:20,WIN-WS02,4624,bob,10.0.0.44,winword.exe,,OK,login_success
+2025-08-14T08:52:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:52:40,WIN-DB01,4625,itadmin,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T08:52:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:53:00,WIN-DC01,4688,david,10.0.0.12,explorer.exe,,OK,process_created
+2025-08-14T08:53:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:53:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:53:20,WIN-WS01,4625,itadmin,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T08:53:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:53:40,WIN-APP01,4624,itadmin,10.0.0.5,winword.exe,,OK,login_success
+2025-08-14T08:53:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:54:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:54:00,WIN-APP01,4688,david,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T08:54:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:54:20,WIN-DC01,4625,david,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T08:54:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:54:40,WIN-WS02,4624,bob,10.0.0.5,chrome.exe,,OK,login_success
+2025-08-14T08:54:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:55:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:55:00,WIN-DC01,4688,guest,10.0.0.12,winword.exe,,OK,process_created
+2025-08-14T08:55:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:55:20,WIN-WS01,4624,david,10.0.0.8,chrome.exe,,OK,login_success
+2025-08-14T08:55:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:55:40,WIN-DC01,4624,itadmin,10.0.0.5,chrome.exe,,OK,login_success
+2025-08-14T08:55:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:56:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:56:00,WIN-DC01,4624,guest,10.0.0.5,chrome.exe,,OK,login_success
+2025-08-14T08:56:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:56:20,WIN-WS01,4624,alice,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T08:56:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:56:40,WIN-WS02,4624,eve,10.0.0.44,winword.exe,,OK,login_success
+2025-08-14T08:56:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:57:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:57:00,WIN-WS01,4688,eve,10.0.0.8,explorer.exe,,OK,process_created
+2025-08-14T08:57:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:57:20,WIN-DB01,4688,charles,10.0.0.5,explorer.exe,,OK,process_created
+2025-08-14T08:57:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:57:40,WIN-WS02,4688,guest,10.0.0.12,explorer.exe,,OK,process_created
+2025-08-14T08:57:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:58:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:58:00,WIN-APP01,4625,david,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T08:58:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:58:20,WIN-APP01,4688,charles,10.0.0.44,winword.exe,,OK,process_created
+2025-08-14T08:58:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:58:40,WIN-DC01,4624,bob,10.0.0.5,chrome.exe,,OK,login_success
+2025-08-14T08:58:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:59:00,WIN-APP01,4625,alice,10.0.0.8,chrome.exe,,OK,login_failed
+2025-08-14T08:59:00,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:59:15,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:59:20,WIN-DC01,4688,bob,10.0.0.12,winword.exe,,OK,process_created
+2025-08-14T08:59:30,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T08:59:40,WIN-DC01,4624,eve,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T08:59:45,WIN-WS02,4688,administrator,45.77.22.91,psexec.exe,psexec \\WIN-DB01 cmd.exe,OK,lateral_movement
+2025-08-14T09:00:00,WIN-APP01,4688,charles,10.0.0.5,explorer.exe,,OK,process_created
+2025-08-14T09:00:20,WIN-APP01,4688,backup,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T09:00:40,WIN-WS02,4624,eve,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T09:01:00,WIN-WS02,4624,guest,10.0.0.44,winword.exe,,OK,login_success
+2025-08-14T09:01:20,WIN-WS01,4688,charles,10.0.0.44,explorer.exe,,OK,process_created
+2025-08-14T09:01:28,WIN-WS01,4688,charles,10.0.0.44,psexec.exe,,OK,process_created
+2025-08-14T09:01:40,WIN-DB01,4688,charles,10.0.0.12,chrome.exe,,OK,process_created
+2025-08-14T09:02:00,WIN-WS01,4625,charles,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T09:02:20,WIN-WS01,4688,guest,10.0.0.44,chrome.exe,,OK,process_created
+2025-08-14T09:02:40,WIN-DB01,4688,charles,10.0.0.5,winword.exe,,OK,process_created
+2025-08-14T09:03:00,WIN-DB01,4624,itadmin,10.0.0.8,winword.exe,,OK,login_success
+2025-08-14T09:03:20,WIN-DB01,4688,charles,10.0.0.12,chrome.exe,,OK,process_created
+2025-08-14T09:03:40,WIN-APP01,4625,eve,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T09:04:00,WIN-WS01,4625,alice,10.0.0.5,winword.exe,,OK,login_failed
+2025-08-14T09:04:20,WIN-WS02,4625,david,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T09:04:40,WIN-DC01,4688,charles,10.0.0.8,chrome.exe,,OK,process_created
+2025-08-14T09:05:00,WIN-WS01,4688,david,10.0.0.12,chrome.exe,,OK,process_created
+2025-08-14T09:05:20,WIN-DB01,4624,bob,10.0.0.44,winword.exe,,OK,login_success
+2025-08-14T09:05:40,WIN-WS02,4688,guest,10.0.0.8,winword.exe,,OK,process_created
+2025-08-14T09:06:00,WIN-DB01,4625,charles,10.0.0.8,chrome.exe,,OK,login_failed
+2025-08-14T09:06:20,WIN-DB01,4624,backup,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T09:06:40,WIN-WS01,4625,david,10.0.0.5,explorer.exe,,OK,login_failed
+2025-08-14T09:07:00,WIN-DB01,4624,alice,10.0.0.5,chrome.exe,,OK,login_success
+2025-08-14T09:07:20,WIN-WS02,4688,itadmin,10.0.0.44,chrome.exe,,OK,process_created
+2025-08-14T09:07:40,WIN-APP01,4625,alice,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T09:08:00,WIN-DB01,4625,david,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T09:08:20,WIN-DB01,4624,itadmin,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T09:08:37,WIN-APP01,4688,david,10.0.0.5,powershell.exe,,OK,process_created
+2025-08-14T09:08:40,WIN-APP01,4624,eve,10.0.0.12,explorer.exe,,OK,login_success
+2025-08-14T09:09:00,WIN-APP01,4688,david,10.0.0.44,chrome.exe,,OK,process_created
+2025-08-14T09:09:20,WIN-DC01,4688,david,10.0.0.12,explorer.exe,,OK,process_created
+2025-08-14T09:09:40,WIN-DB01,4688,david,10.0.0.8,chrome.exe,,OK,process_created
+2025-08-14T09:10:00,WIN-DC01,4625,david,10.0.0.5,explorer.exe,,OK,login_failed
+2025-08-14T09:10:10,WIN-APP01,4688,alice,45.77.22.91,winword.exe,,FAIL,process_created
+2025-08-14T09:10:20,WIN-WS01,4688,alice,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T09:10:40,WIN-WS01,4624,backup,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T09:10:55,WIN-APP01,4625,david,10.0.0.44,cmd.exe,,FAIL,login_failed
+2025-08-14T09:11:00,WIN-DB01,4624,david,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T09:11:16,WIN-DC01,4688,backup,10.0.0.44,explorer.exe,,OK,process_created
+2025-08-14T09:11:20,WIN-DC01,4625,backup,10.0.0.8,winword.exe,,OK,login_failed
+2025-08-14T09:11:40,WIN-WS01,4688,bob,10.0.0.12,chrome.exe,,OK,process_created
+2025-08-14T09:12:00,WIN-WS02,4624,eve,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T09:12:20,WIN-APP01,4624,david,10.0.0.8,chrome.exe,,OK,login_success
+2025-08-14T09:12:40,WIN-WS01,4624,itadmin,10.0.0.44,winword.exe,,OK,login_success
+2025-08-14T09:13:00,WIN-DB01,4624,charles,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T09:13:20,WIN-DB01,4688,itadmin,10.0.0.8,chrome.exe,,OK,process_created
+2025-08-14T09:13:40,WIN-DB01,4624,bob,10.0.0.44,explorer.exe,,OK,login_success
+2025-08-14T09:14:00,WIN-WS01,4625,guest,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T09:14:20,WIN-DC01,4624,bob,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T09:14:40,WIN-WS01,4688,david,10.0.0.44,chrome.exe,,OK,process_created
+2025-08-14T09:15:00,WIN-DC01,4688,david,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T09:15:20,WIN-WS01,4688,bob,10.0.0.44,winword.exe,,OK,process_created
+2025-08-14T09:15:40,WIN-APP01,4624,itadmin,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T09:16:00,WIN-DC01,4688,bob,10.0.0.44,explorer.exe,,OK,process_created
+2025-08-14T09:16:20,WIN-WS02,4624,backup,10.0.0.8,winword.exe,,OK,login_success
+2025-08-14T09:16:23,WIN-APP01,4688,itadmin,10.0.0.44,psexec.exe,,FAIL,process_created
+2025-08-14T09:16:40,WIN-WS01,4625,itadmin,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T09:17:00,WIN-WS01,4625,bob,10.0.0.44,chrome.exe,,OK,login_failed
+2025-08-14T09:17:20,WIN-WS01,4625,alice,10.0.0.8,chrome.exe,,OK,login_failed
+2025-08-14T09:17:40,WIN-WS01,4625,alice,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T09:18:00,WIN-WS01,4625,charles,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T09:18:20,WIN-DB01,4624,alice,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T09:18:40,WIN-WS02,4625,charles,10.0.0.44,winword.exe,,OK,login_failed
+2025-08-14T09:19:00,WIN-APP01,4625,backup,10.0.0.5,explorer.exe,,OK,login_failed
+2025-08-14T09:19:20,WIN-DC01,4624,charles,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T09:19:40,WIN-APP01,4624,alice,10.0.0.44,chrome.exe,,OK,login_success
+2025-08-14T09:20:00,WIN-WS01,4688,alice,10.0.0.44,chrome.exe,,OK,process_created
+2025-08-14T09:20:20,WIN-WS01,4624,charles,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T09:20:40,WIN-APP01,4688,guest,10.0.0.12,explorer.exe,,OK,process_created
+2025-08-14T09:21:00,WIN-DC01,4625,guest,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T09:21:20,WIN-DB01,4624,charles,10.0.0.12,explorer.exe,,OK,login_success
+2025-08-14T09:21:40,WIN-WS02,4624,guest,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T09:22:00,WIN-DB01,4624,charles,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T09:22:20,WIN-WS02,4624,guest,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T09:22:40,WIN-DC01,4625,charles,10.0.0.8,winword.exe,,OK,login_failed
+2025-08-14T09:23:00,WIN-DB01,4688,guest,10.0.0.8,winword.exe,,OK,process_created
+2025-08-14T09:23:20,WIN-WS01,4625,charles,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T09:23:40,WIN-DB01,4688,eve,10.0.0.8,explorer.exe,,OK,process_created
+2025-08-14T09:23:43,WIN-DC01,4688,guest,10.0.0.12,winword.exe,,OK,process_created
+2025-08-14T09:24:00,WIN-DB01,4625,guest,10.0.0.12,winword.exe,,OK,login_failed
+2025-08-14T09:24:20,WIN-DC01,4624,charles,10.0.0.8,chrome.exe,,OK,login_success
+2025-08-14T09:24:40,WIN-WS01,4625,david,10.0.0.8,winword.exe,,OK,login_failed
+2025-08-14T09:25:00,WIN-WS02,4625,itadmin,10.0.0.8,winword.exe,,OK,login_failed
+2025-08-14T09:25:20,WIN-WS01,4624,itadmin,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T09:25:40,WIN-APP01,4688,charles,10.0.0.12,chrome.exe,,OK,process_created
+2025-08-14T09:26:00,WIN-APP01,4625,alice,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T09:26:20,WIN-WS01,4625,backup,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T09:26:40,WIN-APP01,4688,itadmin,10.0.0.8,explorer.exe,,OK,process_created
+2025-08-14T09:27:00,WIN-WS02,4625,bob,10.0.0.8,explorer.exe,,OK,login_failed
+2025-08-14T09:27:20,WIN-DC01,4624,itadmin,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T09:27:40,WIN-WS02,4625,guest,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T09:28:00,WIN-WS01,4624,alice,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T09:28:20,WIN-APP01,4625,guest,10.0.0.5,winword.exe,,OK,login_failed
+2025-08-14T09:28:40,WIN-APP01,4624,alice,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T09:29:00,WIN-DC01,4624,bob,10.0.0.44,chrome.exe,,OK,login_success
+2025-08-14T09:29:20,WIN-DC01,4688,alice,10.0.0.5,explorer.exe,,OK,process_created
+2025-08-14T09:29:40,WIN-APP01,4625,bob,10.0.0.5,explorer.exe,,OK,login_failed
+2025-08-14T09:30:00,WIN-WS01,4688,itadmin,10.0.0.8,chrome.exe,,OK,process_created
+2025-08-14T09:30:20,WIN-WS02,4688,alice,10.0.0.12,explorer.exe,,OK,process_created
+2025-08-14T09:30:40,WIN-DB01,4625,bob,10.0.0.12,winword.exe,,OK,login_failed
+2025-08-14T09:31:00,WIN-DC01,4624,charles,10.0.0.44,explorer.exe,,OK,login_success
+2025-08-14T09:31:20,WIN-DB01,4625,eve,10.0.0.44,chrome.exe,,OK,login_failed
+2025-08-14T09:31:40,WIN-WS02,4688,charles,10.0.0.44,chrome.exe,,OK,process_created
+2025-08-14T09:32:00,WIN-WS01,4624,david,10.0.0.5,winword.exe,,OK,login_success
+2025-08-14T09:32:20,WIN-DB01,4625,david,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T09:32:40,WIN-WS01,4688,david,10.0.0.5,winword.exe,,OK,process_created
+2025-08-14T09:33:00,WIN-DC01,4624,eve,10.0.0.8,winword.exe,,OK,login_success
+2025-08-14T09:33:20,WIN-APP01,4625,backup,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T09:33:40,WIN-DC01,4688,david,10.0.0.12,chrome.exe,,OK,process_created
+2025-08-14T09:34:00,WIN-DC01,4624,eve,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T09:34:20,WIN-APP01,4624,itadmin,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T09:34:40,WIN-APP01,4625,bob,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T09:35:00,WIN-WS01,4624,backup,10.0.0.44,winword.exe,,OK,login_success
+2025-08-14T09:35:20,WIN-DB01,4625,eve,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T09:35:40,WIN-WS02,4624,itadmin,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T09:36:00,WIN-DB01,4688,guest,10.0.0.5,explorer.exe,,OK,process_created
+2025-08-14T09:36:20,WIN-WS01,4688,eve,10.0.0.44,winword.exe,,OK,process_created
+2025-08-14T09:36:40,WIN-WS02,4625,alice,10.0.0.12,winword.exe,,OK,login_failed
+2025-08-14T09:37:00,WIN-WS01,4624,alice,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T09:37:20,WIN-DC01,4625,charles,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T09:37:40,WIN-DC01,4688,itadmin,10.0.0.5,winword.exe,,OK,process_created
+2025-08-14T09:38:00,WIN-APP01,4688,alice,10.0.0.44,explorer.exe,,OK,process_created
+2025-08-14T09:38:20,WIN-WS01,4624,charles,10.0.0.5,winword.exe,,OK,login_success
+2025-08-14T09:38:40,WIN-DC01,4625,charles,10.0.0.8,chrome.exe,,OK,login_failed
+2025-08-14T09:39:00,WIN-WS01,4625,eve,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T09:39:20,WIN-DC01,4625,david,10.0.0.8,chrome.exe,,OK,login_failed
+2025-08-14T09:39:40,WIN-WS02,4624,guest,10.0.0.12,explorer.exe,,OK,login_success
+2025-08-14T09:40:00,WIN-WS01,4625,itadmin,10.0.0.5,winword.exe,,OK,login_failed
+2025-08-14T09:40:20,WIN-DB01,4625,alice,10.0.0.5,winword.exe,,OK,login_failed
+2025-08-14T09:40:40,WIN-DB01,4624,itadmin,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T09:41:00,WIN-DC01,4688,charles,10.0.0.12,chrome.exe,,OK,process_created
+2025-08-14T09:41:20,WIN-APP01,4624,bob,10.0.0.8,winword.exe,,OK,login_success
+2025-08-14T09:41:40,WIN-DB01,4624,eve,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T09:42:00,WIN-WS01,4688,alice,10.0.0.8,explorer.exe,,OK,process_created
+2025-08-14T09:42:20,WIN-DB01,4624,itadmin,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T09:42:40,WIN-WS01,4688,backup,10.0.0.8,explorer.exe,,OK,process_created
+2025-08-14T09:42:47,WIN-APP01,4688,backup,45.77.22.91,winword.exe,,OK,process_created
+2025-08-14T09:43:00,WIN-WS02,4624,charles,10.0.0.12,explorer.exe,,OK,login_success
+2025-08-14T09:43:20,WIN-DB01,4625,backup,10.0.0.12,winword.exe,,OK,login_failed
+2025-08-14T09:43:40,WIN-WS01,4688,guest,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T09:44:00,WIN-WS01,4625,itadmin,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T09:44:01,WIN-WS01,4688,david,185.193.88.10,cmd.exe,,OK,process_created
+2025-08-14T09:44:20,WIN-APP01,4625,charles,10.0.0.44,chrome.exe,,OK,login_failed
+2025-08-14T09:44:40,WIN-APP01,4624,eve,10.0.0.8,winword.exe,,OK,login_success
+2025-08-14T09:45:00,WIN-DB01,4688,itadmin,10.0.0.8,chrome.exe,,OK,process_created
+2025-08-14T09:45:20,WIN-DB01,4624,bob,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T09:45:40,WIN-WS01,4625,david,10.0.0.5,explorer.exe,,OK,login_failed
+2025-08-14T09:46:00,WIN-APP01,4625,david,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T09:46:20,WIN-APP01,4624,charles,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T09:46:40,WIN-APP01,4688,charles,10.0.0.44,explorer.exe,,OK,process_created
+2025-08-14T09:47:00,WIN-APP01,4625,guest,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T09:47:20,WIN-WS02,4624,charles,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T09:47:40,WIN-WS01,4624,charles,10.0.0.8,chrome.exe,,OK,login_success
+2025-08-14T09:47:44,WIN-WS02,4624,guest,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T09:48:00,WIN-WS02,4625,backup,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T09:48:20,WIN-WS02,4625,guest,10.0.0.5,winword.exe,,OK,login_failed
+2025-08-14T09:48:40,WIN-APP01,4624,charles,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T09:49:00,WIN-APP01,4624,backup,10.0.0.12,explorer.exe,,OK,login_success
+2025-08-14T09:49:20,WIN-DB01,4624,eve,10.0.0.8,chrome.exe,,OK,login_success
+2025-08-14T09:49:40,WIN-DB01,4625,itadmin,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T09:50:00,WIN-APP01,4624,eve,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T09:50:20,WIN-DC01,4688,eve,10.0.0.8,explorer.exe,,OK,process_created
+2025-08-14T09:50:40,WIN-WS02,4624,bob,10.0.0.5,chrome.exe,,OK,login_success
+2025-08-14T09:51:00,WIN-DB01,4688,alice,10.0.0.12,explorer.exe,,OK,process_created
+2025-08-14T09:51:06,WIN-DB01,4624,charles,185.193.88.10,cmd.exe,,FAIL,login_success
+2025-08-14T09:51:20,WIN-DC01,4624,david,10.0.0.8,chrome.exe,,OK,login_success
+2025-08-14T09:51:40,WIN-DB01,4688,david,10.0.0.8,winword.exe,,OK,process_created
+2025-08-14T09:52:00,WIN-WS02,4624,eve,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T09:52:20,WIN-WS02,4688,itadmin,10.0.0.5,winword.exe,,OK,process_created
+2025-08-14T09:52:40,WIN-APP01,4688,alice,10.0.0.44,chrome.exe,,OK,process_created
+2025-08-14T09:53:00,WIN-WS02,4624,itadmin,10.0.0.12,explorer.exe,,OK,login_success
+2025-08-14T09:53:20,WIN-APP01,4624,alice,10.0.0.5,chrome.exe,,OK,login_success
+2025-08-14T09:53:40,WIN-APP01,4624,guest,10.0.0.5,chrome.exe,,OK,login_success
+2025-08-14T09:54:00,WIN-DB01,4688,guest,10.0.0.8,winword.exe,,OK,process_created
+2025-08-14T09:54:20,WIN-WS01,4688,itadmin,10.0.0.12,winword.exe,,OK,process_created
+2025-08-14T09:54:21,WIN-DB01,4625,guest,45.77.22.91,psexec.exe,,FAIL,login_failed
+2025-08-14T09:54:22,WIN-WS02,4625,eve,10.0.0.8,cmd.exe,,FAIL,login_failed
+2025-08-14T09:54:40,WIN-APP01,4688,guest,10.0.0.5,explorer.exe,,OK,process_created
+2025-08-14T09:55:00,WIN-DC01,4688,bob,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T09:55:20,WIN-WS01,4624,alice,10.0.0.44,winword.exe,,OK,login_success
+2025-08-14T09:55:40,WIN-APP01,4624,david,10.0.0.44,chrome.exe,,OK,login_success
+2025-08-14T09:56:00,WIN-DB01,4688,backup,10.0.0.8,winword.exe,,OK,process_created
+2025-08-14T09:56:20,WIN-WS02,4625,charles,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T09:56:40,WIN-DB01,4625,david,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T09:57:00,WIN-APP01,4688,guest,10.0.0.12,explorer.exe,,OK,process_created
+2025-08-14T09:57:20,WIN-DB01,4688,david,10.0.0.12,winword.exe,,OK,process_created
+2025-08-14T09:57:40,WIN-DB01,4688,bob,10.0.0.8,explorer.exe,,OK,process_created
+2025-08-14T09:58:00,WIN-DB01,4688,guest,10.0.0.8,explorer.exe,,OK,process_created
+2025-08-14T09:58:20,WIN-DC01,4688,alice,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T09:58:40,WIN-APP01,4624,backup,10.0.0.5,winword.exe,,OK,login_success
+2025-08-14T09:58:42,WIN-DC01,4624,itadmin,45.77.22.91,powershell.exe,,OK,login_success
+2025-08-14T09:59:00,WIN-APP01,4688,guest,10.0.0.8,chrome.exe,,OK,process_created
+2025-08-14T09:59:20,WIN-DB01,4688,itadmin,10.0.0.44,explorer.exe,,OK,process_created
+2025-08-14T09:59:40,WIN-APP01,4624,itadmin,10.0.0.44,winword.exe,,OK,login_success
+2025-08-14T10:00:00,WIN-APP01,4688,guest,10.0.0.44,winword.exe,,OK,process_created
+2025-08-14T10:00:20,WIN-DB01,4624,david,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T10:00:40,WIN-APP01,4624,itadmin,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T10:01:00,WIN-WS02,4624,bob,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T10:01:20,WIN-WS01,4624,eve,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T10:01:40,WIN-APP01,4624,itadmin,10.0.0.5,winword.exe,,OK,login_success
+2025-08-14T10:02:00,WIN-WS01,4625,guest,10.0.0.5,explorer.exe,,OK,login_failed
+2025-08-14T10:02:20,WIN-DC01,4624,bob,10.0.0.44,winword.exe,,OK,login_success
+2025-08-14T10:02:40,WIN-WS01,4625,itadmin,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T10:03:00,WIN-WS02,4625,eve,10.0.0.8,explorer.exe,,OK,login_failed
+2025-08-14T10:03:20,WIN-WS02,4688,david,10.0.0.44,explorer.exe,,OK,process_created
+2025-08-14T10:03:40,WIN-DC01,4688,itadmin,10.0.0.8,explorer.exe,,OK,process_created
+2025-08-14T10:04:00,WIN-WS01,4625,itadmin,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T10:04:20,WIN-WS01,4625,bob,10.0.0.8,winword.exe,,OK,login_failed
+2025-08-14T10:04:31,WIN-WS01,4625,backup,10.0.0.12,cmd.exe,,OK,login_failed
+2025-08-14T10:04:40,WIN-DC01,4624,backup,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T10:04:59,WIN-WS02,4625,eve,10.0.0.44,winword.exe,,OK,login_failed
+2025-08-14T10:05:00,WIN-WS01,4625,eve,10.0.0.12,winword.exe,,OK,login_failed
+2025-08-14T10:05:20,WIN-WS01,4624,backup,10.0.0.5,winword.exe,,OK,login_success
+2025-08-14T10:05:40,WIN-DC01,4625,guest,10.0.0.8,chrome.exe,,OK,login_failed
+2025-08-14T10:06:00,WIN-WS02,4688,charles,10.0.0.44,winword.exe,,OK,process_created
+2025-08-14T10:06:20,WIN-WS01,4624,bob,10.0.0.44,winword.exe,,OK,login_success
+2025-08-14T10:06:40,WIN-DC01,4625,david,10.0.0.5,winword.exe,,OK,login_failed
+2025-08-14T10:07:00,WIN-WS01,4625,itadmin,10.0.0.12,winword.exe,,OK,login_failed
+2025-08-14T10:07:20,WIN-APP01,4625,charles,10.0.0.8,chrome.exe,,OK,login_failed
+2025-08-14T10:07:40,WIN-DB01,4624,david,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T10:08:00,WIN-WS01,4625,backup,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T10:08:20,WIN-APP01,4625,backup,10.0.0.44,winword.exe,,OK,login_failed
+2025-08-14T10:08:40,WIN-APP01,4688,david,10.0.0.44,explorer.exe,,OK,process_created
+2025-08-14T10:09:00,WIN-DC01,4625,backup,10.0.0.44,winword.exe,,OK,login_failed
+2025-08-14T10:09:20,WIN-DB01,4624,guest,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T10:09:40,WIN-WS01,4688,itadmin,10.0.0.12,explorer.exe,,OK,process_created
+2025-08-14T10:10:00,WIN-WS02,4624,itadmin,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T10:10:20,WIN-WS01,4688,alice,10.0.0.5,explorer.exe,,OK,process_created
+2025-08-14T10:10:40,WIN-DC01,4688,backup,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T10:11:00,WIN-WS01,4625,bob,10.0.0.44,chrome.exe,,OK,login_failed
+2025-08-14T10:11:20,WIN-DB01,4625,guest,10.0.0.8,winword.exe,,OK,login_failed
+2025-08-14T10:11:40,WIN-WS02,4625,bob,10.0.0.44,winword.exe,,OK,login_failed
+2025-08-14T10:12:00,WIN-DC01,4624,backup,10.0.0.5,chrome.exe,,OK,login_success
+2025-08-14T10:12:20,WIN-APP01,4625,eve,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T10:12:40,WIN-DB01,4625,alice,10.0.0.5,chrome.exe,,OK,login_failed
+2025-08-14T10:13:00,WIN-DB01,4688,david,10.0.0.12,chrome.exe,,OK,process_created
+2025-08-14T10:13:20,WIN-WS01,4688,backup,10.0.0.5,winword.exe,,OK,process_created
+2025-08-14T10:13:40,WIN-DC01,4625,david,10.0.0.12,winword.exe,,OK,login_failed
+2025-08-14T10:14:00,WIN-WS02,4624,itadmin,10.0.0.44,chrome.exe,,OK,login_success
+2025-08-14T10:14:20,WIN-WS01,4625,backup,10.0.0.8,explorer.exe,,OK,login_failed
+2025-08-14T10:14:24,WIN-DC01,4624,charles,185.193.88.10,chrome.exe,,OK,login_success
+2025-08-14T10:14:40,WIN-DC01,4625,eve,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T10:15:00,WIN-APP01,4625,david,10.0.0.8,winword.exe,,OK,login_failed
+2025-08-14T10:15:20,WIN-APP01,4624,itadmin,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T10:15:40,WIN-DC01,4624,guest,10.0.0.8,winword.exe,,OK,login_success
+2025-08-14T10:16:00,WIN-DC01,4688,david,10.0.0.5,winword.exe,,OK,process_created
+2025-08-14T10:16:20,WIN-DB01,4688,eve,10.0.0.8,chrome.exe,,OK,process_created
+2025-08-14T10:16:37,WIN-DC01,4625,david,10.0.0.12,cmd.exe,,FAIL,login_failed
+2025-08-14T10:16:40,WIN-WS02,4624,backup,10.0.0.44,winword.exe,,OK,login_success
+2025-08-14T10:17:00,WIN-DB01,4688,guest,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T10:17:20,WIN-DB01,4688,backup,10.0.0.44,explorer.exe,,OK,process_created
+2025-08-14T10:17:40,WIN-WS01,4624,itadmin,10.0.0.44,explorer.exe,,OK,login_success
+2025-08-14T10:18:00,WIN-WS01,4624,guest,10.0.0.8,chrome.exe,,OK,login_success
+2025-08-14T10:18:20,WIN-APP01,4624,charles,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T10:18:40,WIN-WS01,4625,itadmin,10.0.0.5,explorer.exe,,OK,login_failed
+2025-08-14T10:19:00,WIN-APP01,4624,bob,10.0.0.5,chrome.exe,,OK,login_success
+2025-08-14T10:19:20,WIN-WS01,4688,itadmin,10.0.0.44,chrome.exe,,OK,process_created
+2025-08-14T10:19:40,WIN-APP01,4625,alice,10.0.0.8,chrome.exe,,OK,login_failed
+2025-08-14T10:20:00,WIN-APP01,4624,alice,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T10:20:20,WIN-DB01,4625,alice,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T10:20:40,WIN-APP01,4625,alice,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T10:21:00,WIN-WS02,4688,charles,10.0.0.44,chrome.exe,,OK,process_created
+2025-08-14T10:21:20,WIN-APP01,4688,bob,10.0.0.5,winword.exe,,OK,process_created
+2025-08-14T10:21:29,WIN-APP01,4625,alice,10.0.0.12,cmd.exe,,FAIL,login_failed
+2025-08-14T10:21:40,WIN-APP01,4625,eve,10.0.0.8,explorer.exe,,OK,login_failed
+2025-08-14T10:22:00,WIN-APP01,4624,guest,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T10:22:20,WIN-DC01,4688,backup,10.0.0.12,explorer.exe,,OK,process_created
+2025-08-14T10:22:40,WIN-APP01,4688,alice,10.0.0.44,chrome.exe,,OK,process_created
+2025-08-14T10:23:00,WIN-WS01,4688,backup,10.0.0.8,winword.exe,,OK,process_created
+2025-08-14T10:23:20,WIN-DC01,4688,charles,10.0.0.44,winword.exe,,OK,process_created
+2025-08-14T10:23:40,WIN-WS02,4624,eve,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T10:24:00,WIN-DC01,4688,guest,10.0.0.8,winword.exe,,OK,process_created
+2025-08-14T10:24:20,WIN-APP01,4688,backup,10.0.0.44,chrome.exe,,OK,process_created
+2025-08-14T10:24:40,WIN-APP01,4624,backup,10.0.0.44,winword.exe,,OK,login_success
+2025-08-14T10:25:00,WIN-DC01,4688,guest,10.0.0.44,winword.exe,,OK,process_created
+2025-08-14T10:25:05,WIN-DC01,4624,backup,10.0.0.12,explorer.exe,,FAIL,login_success
+2025-08-14T10:25:20,WIN-WS01,4688,backup,10.0.0.44,chrome.exe,,OK,process_created
+2025-08-14T10:25:40,WIN-DC01,4688,eve,10.0.0.5,winword.exe,,OK,process_created
+2025-08-14T10:26:00,WIN-DC01,4688,bob,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T10:26:20,WIN-WS01,4688,backup,10.0.0.5,winword.exe,,OK,process_created
+2025-08-14T10:26:40,WIN-DB01,4688,eve,10.0.0.5,winword.exe,,OK,process_created
+2025-08-14T10:27:00,WIN-DB01,4624,eve,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T10:27:20,WIN-WS01,4624,david,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T10:27:40,WIN-WS01,4624,alice,10.0.0.12,explorer.exe,,OK,login_success
+2025-08-14T10:28:00,WIN-DC01,4624,alice,10.0.0.44,chrome.exe,,OK,login_success
+2025-08-14T10:28:20,WIN-WS01,4625,alice,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T10:28:40,WIN-APP01,4624,david,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T10:28:46,WIN-DB01,4624,bob,10.0.0.5,powershell.exe,,FAIL,login_success
+2025-08-14T10:29:00,WIN-WS01,4624,charles,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T10:29:20,WIN-DC01,4688,david,10.0.0.5,explorer.exe,,OK,process_created
+2025-08-14T10:29:40,WIN-WS01,4625,backup,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T10:30:00,WIN-DC01,4624,charles,10.0.0.44,chrome.exe,,OK,login_success
+2025-08-14T10:30:20,WIN-WS02,4624,backup,10.0.0.8,winword.exe,,OK,login_success
+2025-08-14T10:30:40,WIN-DB01,4688,eve,10.0.0.5,winword.exe,,OK,process_created
+2025-08-14T10:31:00,WIN-WS02,4625,charles,10.0.0.8,explorer.exe,,OK,login_failed
+2025-08-14T10:31:20,WIN-DB01,4625,david,10.0.0.44,chrome.exe,,OK,login_failed
+2025-08-14T10:31:40,WIN-WS01,4625,charles,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T10:31:55,WIN-DB01,4688,guest,10.0.0.12,powershell.exe,,FAIL,process_created
+2025-08-14T10:32:00,WIN-DC01,4625,eve,10.0.0.5,winword.exe,,OK,login_failed
+2025-08-14T10:32:20,WIN-WS02,4624,guest,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T10:32:40,WIN-APP01,4688,bob,10.0.0.8,winword.exe,,OK,process_created
+2025-08-14T10:33:00,WIN-DC01,4688,itadmin,10.0.0.8,chrome.exe,,OK,process_created
+2025-08-14T10:33:20,WIN-DB01,4624,david,10.0.0.5,winword.exe,,OK,login_success
+2025-08-14T10:33:40,WIN-DC01,4625,guest,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T10:34:00,WIN-DC01,4625,charles,10.0.0.5,explorer.exe,,OK,login_failed
+2025-08-14T10:34:20,WIN-DC01,4624,bob,10.0.0.8,chrome.exe,,OK,login_success
+2025-08-14T10:34:23,WIN-WS01,4625,charles,45.77.22.91,cmd.exe,,OK,login_failed
+2025-08-14T10:34:40,WIN-DC01,4625,bob,10.0.0.12,explorer.exe,,OK,login_failed
+2025-08-14T10:35:00,WIN-DB01,4625,charles,10.0.0.8,winword.exe,,OK,login_failed
+2025-08-14T10:35:20,WIN-APP01,4625,bob,10.0.0.8,chrome.exe,,OK,login_failed
+2025-08-14T10:35:40,WIN-WS01,4625,bob,10.0.0.8,winword.exe,,OK,login_failed
+2025-08-14T10:36:00,WIN-APP01,4625,david,10.0.0.12,chrome.exe,,OK,login_failed
+2025-08-14T10:36:20,WIN-DC01,4688,alice,10.0.0.12,chrome.exe,,OK,process_created
+2025-08-14T10:36:40,WIN-WS02,4688,itadmin,10.0.0.5,explorer.exe,,OK,process_created
+2025-08-14T10:37:00,WIN-DB01,4625,alice,10.0.0.44,chrome.exe,,OK,login_failed
+2025-08-14T10:37:06,WIN-APP01,4688,david,185.193.88.10,explorer.exe,,OK,process_created
+2025-08-14T10:37:20,WIN-DC01,4624,itadmin,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T10:37:40,WIN-DB01,4624,itadmin,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T10:38:00,WIN-WS01,4624,backup,10.0.0.8,explorer.exe,,OK,login_success
+2025-08-14T10:38:20,WIN-DC01,4688,itadmin,10.0.0.12,explorer.exe,,OK,process_created
+2025-08-14T10:38:40,WIN-WS01,4688,guest,10.0.0.44,explorer.exe,,OK,process_created
+2025-08-14T10:39:00,WIN-DB01,4624,eve,10.0.0.8,winword.exe,,OK,login_success
+2025-08-14T10:39:18,WIN-WS01,4624,alice,10.0.0.12,chrome.exe,,FAIL,login_success
+2025-08-14T10:39:19,WIN-DC01,4688,backup,10.0.0.44,winword.exe,,FAIL,process_created
+2025-08-14T10:39:20,WIN-DB01,4625,backup,10.0.0.5,winword.exe,,OK,login_failed
+2025-08-14T10:39:40,WIN-DB01,4688,bob,10.0.0.8,chrome.exe,,OK,process_created
+2025-08-14T10:39:42,WIN-DB01,4688,backup,10.0.0.5,winword.exe,,FAIL,process_created
+2025-08-14T10:40:00,WIN-WS02,4688,itadmin,10.0.0.12,chrome.exe,,OK,process_created
+2025-08-14T10:40:20,WIN-APP01,4624,david,10.0.0.12,explorer.exe,,OK,login_success
+2025-08-14T10:40:40,WIN-WS01,4624,eve,10.0.0.44,explorer.exe,,OK,login_success
+2025-08-14T10:41:00,WIN-APP01,4688,alice,10.0.0.44,winword.exe,,OK,process_created
+2025-08-14T10:41:20,WIN-WS02,4624,backup,10.0.0.8,winword.exe,,OK,login_success
+2025-08-14T10:41:40,WIN-DC01,4688,itadmin,10.0.0.8,explorer.exe,,OK,process_created
+2025-08-14T10:41:51,WIN-APP01,4688,itadmin,10.0.0.12,winword.exe,,OK,process_created
+2025-08-14T10:42:00,WIN-WS01,4624,david,10.0.0.12,winword.exe,,OK,login_success
+2025-08-14T10:42:20,WIN-DC01,4688,itadmin,10.0.0.12,explorer.exe,,OK,process_created
+2025-08-14T10:42:40,WIN-DB01,4624,alice,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T10:43:00,WIN-DB01,4624,guest,10.0.0.12,explorer.exe,,OK,login_success
+2025-08-14T10:43:20,WIN-DC01,4688,david,10.0.0.44,winword.exe,,OK,process_created
+2025-08-14T10:43:40,WIN-DB01,4624,eve,10.0.0.12,chrome.exe,,OK,login_success
+2025-08-14T10:44:00,WIN-DB01,4688,backup,10.0.0.44,winword.exe,,OK,process_created
+2025-08-14T10:44:20,WIN-APP01,4625,backup,10.0.0.12,winword.exe,,OK,login_failed
+2025-08-14T10:44:40,WIN-DB01,4688,backup,10.0.0.44,explorer.exe,,OK,process_created
+2025-08-14T10:45:00,WIN-WS01,4688,eve,10.0.0.12,chrome.exe,,OK,process_created
+2025-08-14T10:45:20,WIN-WS02,4624,alice,10.0.0.44,winword.exe,,OK,login_success
+2025-08-14T10:45:40,WIN-APP01,4625,alice,10.0.0.44,explorer.exe,,OK,login_failed
+2025-08-14T10:46:00,WIN-WS01,4625,charles,10.0.0.8,chrome.exe,,OK,login_failed
+2025-08-14T10:46:20,WIN-APP01,4624,eve,10.0.0.5,explorer.exe,,OK,login_success
+2025-08-14T10:47:11,WIN-WS01,4688,bob,10.0.0.44,powershell.exe,,FAIL,process_created
+2025-08-14T10:47:53,WIN-APP01,4688,itadmin,10.0.0.44,chrome.exe,,FAIL,process_created
+2025-08-14T10:49:32,WIN-WS02,4625,guest,10.0.0.44,chrome.exe,,OK,login_failed
+2025-08-14T10:57:36,WIN-WS01,4688,backup,10.0.0.5,chrome.exe,,OK,process_created
+2025-08-14T11:00:48,WIN-WS01,4625,itadmin,10.0.0.5,cmd.exe,,FAIL,login_failed
+2025-08-14T11:02:30,WIN-WS02,4688,alice,10.0.0.8,psexec.exe,,OK,process_created
+2025-08-14T11:06:29,WIN-DB01,4624,itadmin,45.77.22.91,winword.exe,,FAIL,login_success
+2025-08-14T11:09:28,WIN-DB01,4624,eve,10.0.0.8,psexec.exe,,OK,login_success
+2025-08-14T11:16:32,WIN-WS02,4625,guest,10.0.0.12,chrome.exe,,FAIL,login_failed
+2025-08-14T11:17:29,WIN-DC01,4625,bob,10.0.0.5,cmd.exe,,OK,login_failed
+2025-08-14T11:17:40,WIN-DC01,4688,bob,10.0.0.12,explorer.exe,,OK,process_created
+2025-08-14T11:19:14,WIN-APP01,4688,itadmin,10.0.0.5,explorer.exe,,OK,process_created
+2025-08-14T11:20:08,WIN-WS02,4624,david,45.77.22.91,cmd.exe,,OK,login_success
+2025-08-14T11:23:10,WIN-APP01,4625,bob,10.0.0.8,cmd.exe,,OK,login_failed
+2025-08-14T11:23:24,WIN-WS02,4624,bob,10.0.0.44,psexec.exe,,FAIL,login_success
+2025-08-14T11:33:21,WIN-WS02,4624,alice,10.0.0.5,cmd.exe,,FAIL,login_success
+2025-08-14T11:37:03,WIN-WS01,4688,backup,185.193.88.10,explorer.exe,,FAIL,process_created
+2025-08-14T11:41:42,WIN-WS01,4624,backup,10.0.0.5,winword.exe,,FAIL,login_success
+2025-08-14T11:41:57,WIN-WS01,4624,eve,185.193.88.10,psexec.exe,,OK,login_success
+2025-08-14T11:42:14,WIN-DB01,4625,itadmin,10.0.0.12,psexec.exe,,OK,login_failed
+2025-08-14T11:49:31,WIN-APP01,4625,charles,10.0.0.8,cmd.exe,,FAIL,login_failed
+2025-08-14T11:51:10,WIN-DB01,4624,guest,10.0.0.12,cmd.exe,,FAIL,login_success
+2025-08-14T11:51:39,WIN-DB01,4688,eve,10.0.0.44,winword.exe,,OK,process_created
+2025-08-14T11:56:09,WIN-DB01,4688,bob,10.0.0.8,powershell.exe,,OK,process_created
+2025-08-14T11:59:29,WIN-WS02,4625,backup,10.0.0.44,powershell.exe,,FAIL,login_failed
+2025-08-14T12:00:35,WIN-APP01,4624,itadmin,10.0.0.44,powershell.exe,,OK,login_success
+2025-08-14T12:04:04,WIN-WS02,4625,alice,10.0.0.5,psexec.exe,,OK,login_failed
+2025-08-14T12:06:27,WIN-DB01,4625,bob,185.193.88.10,chrome.exe,,OK,login_failed
+2025-08-14T12:12:36,WIN-WS01,4688,guest,185.193.88.10,chrome.exe,,FAIL,process_created
+2025-08-14T12:16:41,WIN-DC01,4688,backup,10.0.0.12,chrome.exe,,FAIL,process_created
+2025-08-14T12:17:18,WIN-WS02,4688,eve,185.193.88.10,powershell.exe,,FAIL,process_created
+2025-08-14T12:19:30,WIN-DC01,4625,backup,10.0.0.12,psexec.exe,,FAIL,login_failed
+2025-08-14T12:27:58,WIN-DC01,4688,charles,10.0.0.8,explorer.exe,,OK,process_created
+2025-08-14T12:28:00,WIN-WS02,4625,backup,45.77.22.91,cmd.exe,,OK,login_failed
+2025-08-14T12:28:52,WIN-WS01,4688,itadmin,10.0.0.5,cmd.exe,,FAIL,process_created
+2025-08-14T12:31:22,WIN-DC01,4624,eve,185.193.88.10,explorer.exe,,OK,login_success
+2025-08-14T12:31:39,WIN-WS02,4625,itadmin,10.0.0.5,chrome.exe,,FAIL,login_failed
+2025-08-14T12:32:49,WIN-WS01,4624,david,45.77.22.91,powershell.exe,,OK,login_success
+2025-08-14T12:35:01,WIN-WS02,4625,backup,10.0.0.44,powershell.exe,,OK,login_failed
+2025-08-14T12:38:00,WIN-DC01,4625,bob,185.193.88.10,chrome.exe,,FAIL,login_failed
+2025-08-14T12:39:53,WIN-APP01,4688,backup,10.0.0.8,cmd.exe,,FAIL,process_created
+2025-08-14T12:48:48,WIN-APP01,4625,guest,185.193.88.10,powershell.exe,,OK,login_failed
+2025-08-14T12:55:53,WIN-DC01,4624,bob,185.193.88.10,powershell.exe,,FAIL,login_success
+2025-08-14T12:56:23,WIN-WS01,4625,alice,10.0.0.12,chrome.exe,,FAIL,login_failed
+2025-08-14T12:58:47,WIN-WS01,4624,charles,10.0.0.5,chrome.exe,,FAIL,login_success
+2025-08-14T13:01:14,WIN-DB01,4688,guest,10.0.0.12,explorer.exe,,OK,process_created
+2025-08-14T13:15:34,WIN-WS01,4688,bob,45.77.22.91,powershell.exe,,OK,process_created
+2025-08-14T13:16:03,WIN-DB01,4625,eve,10.0.0.8,explorer.exe,,FAIL,login_failed
+2025-08-14T13:17:44,WIN-DC01,4688,david,185.193.88.10,winword.exe,,FAIL,process_created
+2025-08-14T13:19:07,WIN-DC01,4625,eve,185.193.88.10,cmd.exe,,OK,login_failed
+2025-08-14T13:28:07,WIN-DC01,4624,eve,10.0.0.44,psexec.exe,,FAIL,login_success
+2025-08-14T13:32:07,WIN-APP01,4688,alice,10.0.0.12,psexec.exe,,FAIL,process_created
