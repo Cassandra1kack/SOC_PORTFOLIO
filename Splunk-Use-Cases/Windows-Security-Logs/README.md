@@ -76,11 +76,9 @@ Classic signature of successful brute force.
 What does the attacker do after logging in?
 ```splunk
 index=windows src_ip="45.77.22.91"
-| table _time EventCode user process command_line
-| sort _time
+| stats count by _time command_line , user
 ```
-<img width="1912" height="1031" alt="Image collée (3)" src="https://github.com/user-attachments/assets/c5bc7d11-201e-43cf-9fe3-161011c1cbb1" />
-
+<img width="1917" height="979" alt="image" src="https://github.com/user-attachments/assets/abb70136-0889-4dcd-b39b-cf721ce46cb4" />
 
 ### 4. Persistence Mechanisms And  Privilege Escalation
 
