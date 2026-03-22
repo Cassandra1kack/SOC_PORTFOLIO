@@ -17,7 +17,7 @@ The objective was to detect, analyze, and understand a security incident involvi
 ##  Tools Used
 
 * Splunk
-* Windows Event Logs [here](Splunk-Use-Cases/Windows-Security-Logs/dataset/windows__logs.csv)
+* Windows Event Logs [here](dataset/windows__logs.csv)
   
 
 ---
@@ -141,7 +141,7 @@ dataset/windows_soc_training_logs.csv
 
 A full incident report with detailed analysis, timeline, and conclusions is available :
 
- [here](Splunk-Use-Cases/Windows-Security-Logs/REPORT.md)
+ [here](REPORT.md)
 
 ---
 
