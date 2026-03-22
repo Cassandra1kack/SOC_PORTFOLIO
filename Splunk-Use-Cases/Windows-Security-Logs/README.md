@@ -17,7 +17,7 @@ The objective was to detect, analyze, and understand a security incident involvi
 ##  Tools Used
 
 * Splunk
-* Windows Event Logs here👉️
+* Windows Event Logs [here](Splunk-Use-Cases/Windows-Security-Logs/dataset/windows__logs.csv)
   
 
 ---
@@ -79,8 +79,8 @@ index=windows src_ip="45.77.22.91"
 | table _time EventCode user process command_line
 | sort _time
 ```
-<img width="1917" height="902" alt="image" src="https://github.com/user-attachments/assets/49c65818-c78d-4df4-b6d5-de6c8087d04a" />
-m
+<img width="1912" height="1031" alt="Image collée (3)" src="https://github.com/user-attachments/assets/c5bc7d11-201e-43cf-9fe3-161011c1cbb1" />
+
 
 ### 4. Persistence Mechanisms And  Privilege Escalation
 
@@ -141,9 +141,9 @@ dataset/windows_soc_training_logs.csv
 
 ##  Detailed Report
 
-A full incident report with detailed analysis, timeline, and conclusions is available here:
+A full incident report with detailed analysis, timeline, and conclusions is available :
 
- (Splunk-Use-Cases/Windows-Security-Logs/README (Copie).md)
+ [here](Splunk-Use-Cases/Windows-Security-Logs/README%20(Copie).md)
 
 ---
 
