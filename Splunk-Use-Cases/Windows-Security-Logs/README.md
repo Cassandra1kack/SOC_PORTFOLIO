@@ -141,7 +141,7 @@ dataset/windows_soc_training_logs.csv
 
 A full incident report with detailed analysis, timeline, and conclusions is available :
 
- [here](Splunk-Use-Cases/Windows-Security-Logs/README%20(Copie).md)
+ [here](Splunk-Use-Cases/Windows-Security-Logs/REPORT.md)
 
 ---
 
