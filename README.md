@@ -72,7 +72,26 @@ Each project represents a complete SOC scenario from attack simulation to docume
 
 # Splunk Log Analysis Projects
 ### W. [WINDOWS log analysis](Splunk-Use-Cases/Windows-Security-Logs/README.md)
- . [INVESTIGATION](Splunk-Use-Cases/Windows-Security-Logs/README.md)
+ #### [RDP BRUT-FORCE analysis](Splunk-Use-Cases/Windows-Security-Logs/README.md)
+  Objectif is to detect or identify:
+  
+. Command execution
+. User creation
+. Privilege escalation
+. Lateral movement
+. Log clearing
+
+ #### PHYSHING analysis
+  Objectif is to detect or identify:
+  
+- Phishing (malicious document)
+- PowerShell execution
+- Living Off The Land techniques
+- Credential dumping
+- Lateral movement
+- Command & Control (C2)
+- Data exfiltration
+
 
 ### 4. DNS Log Analysis
 
