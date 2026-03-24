@@ -85,7 +85,7 @@ Each project represents a complete SOC scenario from attack simulation to docume
 
 
 ---
-### [Network & Web Threat Detection](Splunk-Use-Cases/Network & Web Threats/datasets/Network & Web Threat Detection.md)
+### [Network & Web Threat Detection](Splunk-Use-Cases/Network℅2&%Web Threats/datasets/Network%2&%2Web%2Threat%2Detection.md)
 
 > DNS logs
 >> HTTP logs
