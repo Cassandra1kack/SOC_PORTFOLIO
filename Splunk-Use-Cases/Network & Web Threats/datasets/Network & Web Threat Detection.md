@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="Capture d’écran du 2026-03-24 11-24-36" src="https://github.com/user-attachments/assets/5311b641-f16d-457d-99c6-7f5e456efcf1" />#  Splunk Project 1 – Network & Web Threat Detection
+# Splunk Project 1 – Network & Web Threat Detection
 
 ## >>> Overview
 
