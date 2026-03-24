@@ -54,24 +54,12 @@ Each project represents a complete SOC scenario from attack simulation to docume
 
 ---
 
-### 2. Endpoint Threat Detection
-
-* Objective: Monitor suspicious processes and malicious scripts.
-* Tools: Sysmon, Windows Event Logs, Wazuh custom rules
-* MITRE ATT&CK: T1059 – Command and Scripting Interpreter
-
----
-
-### 3. Lateral Movement & Privilege Abuse
-
-* Objective: Detect SMB abuse and privilege escalation attempts.
-* Tools: Wazuh correlation rules, Windows Security logs
-* MITRE ATT&CK: T1021 – Remote Services
-
 ---
 
 # Splunk Log Analysis Projects
+
 ### W. [WINDOWS log analysis](Splunk-Use-Cases/Windows-Security-Logs)
+
  #### [RDP BRUT-FORCE analysis](Splunk-Use-Cases/Windows-Security-Logs/README.md)
   Objectif is to detect or identify:
   
@@ -82,6 +70,8 @@ Each project represents a complete SOC scenario from attack simulation to docume
 . Log clearing
 
  #### [PHYSHING analysis](Splunk-Use-Cases/Windows-Security-Logs/phishingREADME.md)
+
+ 
   Objectif is to detect or identify:
   
 - Phishing (malicious document)
@@ -93,37 +83,35 @@ Each project represents a complete SOC scenario from attack simulation to docume
 - Data exfiltration
 
 
-### 4. DNS Log Analysis
 
-* Detect suspicious domains
-* Identify DNS tunneling patterns
-* Detect NXDOMAIN flood
-* MITRE ATT&CK: T1071.004 – Application Layer Protocol (DNS)
+---
+### [Network & Web Threat Detection](Splunk-Use-Cases/Network & Web Threats/datasets/Network & Web Threat Detection.md)
+
+> DNS logs
+>> HTTP logs
+
+*Objectives*:
+
+Detect suspicious DNS activity (NXDOMAIN flood, DNS tunneling)
+Identify web-based attacks (SQL Injection, XSS)
+Detect suspicious user behavior (malicious user-agents)
+Monitor abnormal outbound traffic (data exfiltration)
+Correlate multiple indicators to identify compromised hosts
 
 ---
 
-### 5. HTTP Log Analysis
+Projet 2 : User Access & Credential Threats**
 
-* Detect SQL Injection patterns
-* Identify XSS attempts
-* Detect suspicious user-agents
-* Monitor large data transfers
+**Sources de logs :**
 
----
+* SSH Logs
+* FTP Logs
 
-### 6. SSH Log Analysis
+**Objectifs :**
 
-* Detect brute force attempts
-* Identify failed → successful login patterns
-* Detect suspicious remote access
-
----
-
-### 7. FTP Log Analysis
-
-* Detect unauthorized file uploads
-* Monitor abnormal file transfers
-* Identify suspicious authentication attempts
+* Détecter les tentatives de brute force SSH
+* Identifier les patterns “failed → successful login”
+* Surveiller les uploads/downloads FTP suspects ou non autorisés
 
 ---
 
