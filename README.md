@@ -1,5 +1,6 @@
-![Header](https://capsule-render.vercel.app/api?type=slice&color=1a1a1a&height=200&section=header&text=KACK%20Bayiha%20Cassandra%20-%20SOC%20Analyst%20Portfolio&fontSize=30&fontColor=39ff14)
-
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=25&pause=1000&color=39FF14&center=true&vCenter=true&width=500&lines=KACK+Bayiha+Cassandra;Junior+SOC+Analyst+%7C+Blue+Team;Threat+Detection+%26+Incident+Response;Wazuh+%7C+SIEM+%7C+Traffic+Analysis" alt="Typing SVG" />
+</p>
 ## About Me
 
 My name is **Kack Bayiha Cassandra**.
