@@ -1,6 +1,4 @@
-![Header](https://capsule-render.vercel.app/api?type=waving&color=39ff14&height=200&section=header&text=KACK%20Bayiha%20Cassandra%20|%20Aspiring%20SOC%20Analyst%20L1&fontSize=35&fontColor=ffffff)
-
-
+![Header](https://capsule-render.vercel.app/api?type=slice&color=1a1a1a&height=200&section=header&text=KACK%20Bayiha%20Cassandra%20-%20SOC%20Analyst%20Portfolio&fontSize=30&fontColor=39ff14)
 
 ## About Me
 
