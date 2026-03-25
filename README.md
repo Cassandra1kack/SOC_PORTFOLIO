@@ -1,5 +1,42 @@
+<h1 align="center">
+  <svg width="600" height="120" viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="120" rx="10" fill="#1A1A1A"/>
+    
+    <style>
+      .text { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: bold; }
+      
+      /* Animation Nom : Apparition directe */
+      .name {
+        fill: #FFFFFF;
+        font-size: 32px;
+        opacity: 0;
+        animation: fadeIn 0.5s ease-out forwards;
+        animation-delay: 0.2s;
+      }
+      
+      /* Animation Titre : Apparition après 1.2 seconde */
+      .title {
+        fill: #39ff14; /* Vert SOC */
+        font-size: 24px;
+        opacity: 0;
+        animation: fadeIn 0.5s ease-out forwards;
+        animation-delay: 1.4s; /* Délai pour le reste */
+      }
+      
+      @keyframes fadeIn {
+        to { opacity: 1; }
+      }
+    </style>
 
-![Header](https://capsule-render.vercel.app/api?type=soft&color=00d4ff&height=200&section=header&text=Cassandra%20KACK%20|%20Cybersecurity%20%26%20Blue%20Team%20Operations&fontSize=30&fontColor=ffffff)
+    <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle" class="text name">
+      KACK Bayiha Cassandra
+    </text>
+    
+    <text x="50%" y="75%" dominant-baseline="middle" text-anchor="middle" class="text title">
+      | SOC Analyst L1 |
+    </text>
+  </svg>
+</h1>
 
 
 ## About Me
