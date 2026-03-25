@@ -2,171 +2,73 @@
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&pause=1000&color=39FF14&center=true&vCenter=true&width=900&lines=Junior+SOC+Analyst;Incident+investigation+methodology+%7C+Blue+Team;Threat+Detection+%26+Log+Analysis;splunk+%7C+wazuh+%7C+Traffic+Analysis" alt="Typing SVG" />
 </p>
-## About Me
 
-My name is **Kack Bayiha Cassandra**. 
-I am focused on SOC operations, Blue Team defense, incident detection, and security incident reporting.
+## 👤 About Me
+My name is **Kack Bayiha Cassandra**, an aspiring SOC Analyst. My expertise focuses on Blue Team operations, intrusion detection, SIEM log analysis, and structured incident reporting.
 
-This repository showcases hands-on security projects built in a realistic lab environment to develop practical skills in monitoring, detection, and structured incident analysis.
-
-My objective is to grow into a **SOC Analyst / Blue Team** role with strong foundations in:
-
-* SIEM monitoring
-* Log analysis (Windows_event, network, authentication, services)
-* Incident investigation methodology
-* MITRE ATT&CK mapping
-* Professional incident reporting
-
---- 
-
-## Objective of This Portfolio
-
-This lab demonstrates:
-
-* Practical experience with SIEM platforms
-* Detection of real-world attack scenarios
-* Log analysis across Windows and network services
-* End-to-end SOC L1 workflow (Detect → Analyze → Report → Lessons Learned)
-* Mapping detections to MITRE ATT&CK techniques
-
-Each project represents a complete SOC scenario from attack simulation to documented incident report.
+This repository showcases hands-on security projects built in a realistic lab environment to master the full incident lifecycle: **Detection → Analysis → Response → Reporting.**
 
 ---
 
-# Lab Architecture
-
-**Host OS:** Ubuntu 24.04
-**Virtualization:** VirtualBox
-**SIEM Platforms:** Wazuh & Splunk
-**Endpoints:** Windows 11 (Victim), Kali Linux (Attacker)
-**Network:** Isolated internal lab network
-
+## 🏗️ Lab Architecture
+To ensure high-fidelity analysis, I have implemented an isolated enterprise-grade infrastructure:
+* **Host OS:** Ubuntu 24.04 LTS (VirtualBox).
+* **SIEM/XDR Platforms:** Wazuh (Manager & Dashboard) & Splunk Enterprise.
+* **Endpoints:** Windows 11 (Hardened with **Sysmon**) & Kali Linux (Attacker).
+* **Network:** Isolated internal virtual network for safe attack simulation.
 
 ---
 
-# Projects Overview
+## 🚀 Detection & Analysis Projects (Completed)
 
-## Wazuh-Based Detection Projects
+### 1️⃣ RDP/SSH Brute Force Detection
+* **Objective:** Identify and mitigate high-volume authentication attempts.
+* **Tools:** Wazuh, Hydra, Windows Event ID **4625**.
+* **MITRE Mapping:** [T1110 - Brute Force](https://attack.mitre.org/techniques/T1110/).
+* **Outcome:** Configured custom correlation rules and implemented **Active Response** to automatically ban source IPs after 5 failed attempts.
 
-### 1. Brute Force Detection
+### 2️⃣ Post-Compromise Forensic Analysis (Splunk)
+* **Scenario:** Investigation of a Windows machine following a successful breach.
+* **Artifacts Detected:**
+    * Suspicious command execution (CMD/PowerShell).
+    * Malicious user account creation.
+    * Privilege escalation attempts.
+    * Security log tampering (**Log Clearing**).
 
-* Objective: Detect authentication brute force attempts.
-* Tools: Wazuh, Hydra, Windows Event ID 4625
-* MITRE ATT&CK: T1110 – Brute Force
-
----
-
----
-
-# Splunk Log Analysis Projects
-
-### W. [WINDOWS log analysis](Splunk-Use-Cases/Windows-Security-Logs)
-
- #### [RDP BRUT-FORCE analysis](Splunk-Use-Cases/Windows-Security-Logs/README.md)
-  Objectif is to detect or identify:
-  
-. Command execution
-. User creation
-. Privilege escalation
-. Lateral movement
-. Log clearing
-
- #### [PHYSHING analysis](Splunk-Use-Cases/Windows-Security-Logs/phishingREADME.md)
-
- 
-  Objectif is to detect or identify:
-  
-- Phishing (malicious document)
-- PowerShell execution
-- Living Off The Land techniques
-- Credential dumping
-- Lateral movement
-- Command & Control (C2)
-- Data exfiltration
-
-
-
----
-### [Network & Web Threat Detection](Splunk-Use-Cases/HTTP-DNS-log-analysis/Network-and-Web-Threat-Detection.md) 
-
-
-> DNS logs
->> HTTP logs
-
-*Objectives*:
-
-Detect suspicious DNS activity (NXDOMAIN flood, DNS tunneling)
-Identify web-based attacks (SQL Injection, XSS)
-Detect suspicious user behavior (malicious user-agents)
-Monitor abnormal outbound traffic (data exfiltration)
-Correlate multiple indicators to identify compromised hosts
+### 3️⃣ Phishing Campaign Investigation
+* **Scenario:** Analyzing the execution of a malicious document (macro-based).
+* **Analysis Points:**
+    * **Living Off The Land (LotL)** techniques via PowerShell.
+    * Credential harvesting and C2 (Command & Control) communications.
+    * Lateral movement detection across the network.
 
 ---
 
-Projet 2 : User Access & Credential Threats**
+## 🔬 Roadmap & Upcoming Projects
+*These modules are currently being implemented in the lab:*
 
-**Sources de logs :**
-
-* SSH Logs
-* FTP Logs
-
-**Objectifs :**
-
-* Détecter les tentatives de brute force SSH
-* Identifier les patterns “failed → successful login”
-* Surveiller les uploads/downloads FTP suspects ou non autorisés
+* **Network Threat Detection:** Analyzing DNS logs (Tunneling) and HTTP logs (SQLi, XSS, suspicious User-Agents).
+* **Data Exfiltration:** Detecting data leaks via ICMP and web protocol anomalies.
+* **Email Security:** Monitoring SMTP traffic and identifying Spam/Phishing indicators.
+* **PCAP Analysis:** Wireshark investigations into stealthy port scans and network anomalies.
 
 ---
 
-### 8. SMTP Log Analysis
-
-* Detect phishing indicators
-* Identify spam campaigns
-* Monitor unusual outbound mail traffic
-
----
-
-### 9. DHCP Log Analysis
-
-* Detect rogue DHCP activity
-* Identify unusual IP allocation patterns
+## 🛠️ Technical Stack
+| Category | Tools |
+| :--- | :--- |
+| **SIEM / XDR** | Wazuh, Splunk Enterprise |
+| **Host Monitoring** | Sysmon, Windows Event Viewer |
+| **Network Analysis** | Wireshark, Zeek (DNS/HTTP Logs) |
+| **Attack Simulation** | Kali Linux (Hydra, Metasploit) |
+| **Frameworks** | MITRE ATT&CK, NIST Incident Response |
 
 ---
 
-### 10. Tunnel & Data Exfiltration Detection
-
-* DNS tunneling detection
-* ICMP tunneling analysis
-* HTTP-based exfiltration patterns
-
----
-
-# Network Traffic Analysis
-
-## Wireshark Investigations
-
-* PCAP analysis for port scanning
-* DNS anomaly inspection
-* Suspicious HTTP payload review
-* SSH session analysis
+## 📂 Repository Structure
+* `/Projects`: Detailed folders for each simulation (Logs, Screenshots, Write-ups).
+* `/Configs`: Custom configuration files (Wazuh Rules, Sysmon XML).
+* `/Reports`: Formal incident reports in PDF format.
 
 ---
-
-
----
-
-# Security Tools Used
-
-* Wazuh – SIEM & XDR platform
-* Splunk Enterprise – Log analysis & correlation
-* Sysmon – Advanced Windows logging
-* Wireshark – Packet inspection
-* Kali Linux – Attack simulation
-* MITRE Corporation – ATT&CK Framework
-
----
-
-# Author
-
-Kack Bayiha Cassandra
-Cybersecurity | SOC | Blue Team
+**Contact:** [Your LinkedIn Link] | [Your Email Address]
