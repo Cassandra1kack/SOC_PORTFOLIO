@@ -21,8 +21,8 @@ The dataset includes both normal and malicious activities to replicate realistic
 
 ##  Data Sources
 
-### 1. DNS Logs
-### 2. HTTP Logs
+### 1. [DNS Logs](datasets/dns_logs.csv)
+### 2. [HTTP Logs](datasets/http_logs.csv)
 ---
 🔔️Unusual Outbound Data Transfer Detected
 ---
