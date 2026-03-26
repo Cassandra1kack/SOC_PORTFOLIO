@@ -66,13 +66,14 @@ Network reconnaissance to identify active hosts
 
 **observations:**
 In the event viewer log, we see the attacker's machine Kali and its IP address` 192.168.100.20` (event ID: 4625). 
-we also see the target account Administrator.
+After repeated failures → Successful login detected on account: cassandra • Host: DESKTOP-OUNOFU4
 
-This clearly indicates a **brute-force pattern**:
+This pattern clearly indicates a brute-force attack followed by account compromise.
 
 >> Same source IP
 >>>> Repeated failures
 >>>>>> Multiple credential attempts
+>>>>>>>> Successful login 
 
 ## WAZUH log analysis : use case
 
@@ -87,20 +88,23 @@ data.win.system.eventID:4625 AND data.win.eventdata.ipAddress:192.168.100.20
 
 
 
-<img width="1916" height="1054" alt="Capture d’écran du 2026-03-26 02-21-49" src="https://github.com/user-attachments/assets/906bd99f-d8de-4563-b9d0-a21f6137ff77" />
+<img width="1916" height="1054" alt="Capture d’écran du 2026-03-26 02-18-46" src="https://github.com/user-attachments/assets/b55d7f62-29e1-42ee-b484-b85f3eb31c8b" />
 
 
 
-data.win.system.eventID:4625 AND data.win.eventdata.ipAddress:192.168.100.20
 
 
 # Behavior observed:
 
 >> High frequency login attempts Event ID: 4625 (Failed Logon)
->>>> Same source IP :192.168.100.20
+>>>> Same source IP :`192.168.100.20`
 >>>>> Multiple username/password combinations
->>>>>>>>Event ID: 4625 (Failed Logon)
+>>>>>>>> Eventual successful authentication after multiple failures
 
+
+ This sequence is a classic indicator of a successful brute-force attack.
+
+ 
  ## Detection Logic (Wazuh)
 
 Custom rule created to detect brute force behavior:
