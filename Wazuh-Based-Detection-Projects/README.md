@@ -73,11 +73,12 @@ This pattern clearly indicates a brute-force attack followed by account compromi
 >> Same source IP
 >>>> Repeated failures
 >>>>>> Multiple credential attempts
->>>>>>>> Successful login 
+>>>>>>>> Successful login (event ID: 4625)
 
 ## WAZUH log analysis : use case
 
 We are continuing our investigation in the  wazuh SIEM
+
 Query :
 ```
 data.win.system.eventID:4625 AND data.win.eventdata.ipAddress:192.168.100.20
@@ -99,7 +100,7 @@ data.win.system.eventID:4625 AND data.win.eventdata.ipAddress:192.168.100.20
 >> High frequency login attempts Event ID: 4625 (Failed Logon)
 >>>> Same source IP :`192.168.100.20`
 >>>>> Multiple username/password combinations
->>>>>>>> Eventual successful authentication after multiple failures
+>>>>>>>> Eventual successful authentication (event ID: 4625) after multiple failures
 
 
  This sequence is a classic indicator of a successful brute-force attack.
@@ -134,6 +135,7 @@ It is configured to activate after 5 failed attempts within 120 seconds, and ref
 ## MITRE ATT&CK Mapping
  
 Technique: T1110 – Brute Force
+Tactic: Credential Access
 
 **Alerting & Response**
  
@@ -170,6 +172,16 @@ Technique: T1110 – Brute Force
 >>>>>>>>SIEM visibility is essential for early detection
 
 ---
+> ## Tools & Technologies
+>> Wazuh SIEM
+>>> Windows 11 (Log Source)
+>>>> Ubuntu Server 24.04
+>>>>>Kali Linux
+>>>>>>Hydra
+>>>>>>>MITRE ATT&CK Framework
+
+----
+incident report bruteforce ticket is [here](incident-report-bruteforce.md)
 
 **Author**
 Kack B. Cassandra
