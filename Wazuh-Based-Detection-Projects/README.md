@@ -31,11 +31,12 @@ SIEM: Wazuh Manager – Ubuntu Server `192.168.100.10`
 ---
 ## Attack simulation with kali 
 
-I begun by scan the network to see available host with they ip 
+Network reconnaissance to identify active hosts
 
 <img width="909" height="1054" alt="Capture d’écran du 2026-03-26 02-30-45" src="https://github.com/user-attachments/assets/2cad8b51-29cd-402b-92d2-7aa837c22bfc" />
 
-now i do the attack wiht hydra
+>> Execution of brute-force attack using Hydra
+>>>>Generation of repeated authentication failures
 
 <img width="911" height="1000" alt="Capture d’écran du 2026-03-26 01-30-56" src="https://github.com/user-attachments/assets/1786829d-dca1-4422-9dc8-ffb6241f7925" />
 
