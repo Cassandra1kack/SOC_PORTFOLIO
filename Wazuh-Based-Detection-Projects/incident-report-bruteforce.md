@@ -116,10 +116,10 @@ A brute-force attack targeting the RDP service was detected from a single extern
 
 ---
 
-## 📌 Incident Status
+##  Incident Status
 
-✅ Contained
-⚠️ Requires follow-up investigation (post-compromise activity)
+ Contained
+ Requires follow-up investigation (post-compromise activity)
 
 ---
 
